@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap');
+ body{
+     box-sizing: border-box;
+     margin: 0px;
+     padding: 0px;
+     border: 0px;
+     background-color: var(--bg-color-body);
+ }
+ :root{
+     /* cores de fundo*/
+     --bg-color-body:rgb(156, 156, 156);
+     --bg-color-header:rgba(255, 10, 10, 0.904);
+     --bg-color-main: #DDD;
+     --bg-color-div: #fff;
+     --color-border-div: rgb(170, 170, 170);
+     
+     /* cores dos botões*/
+     --bg-color-button: rgba(248, 2, 2, 0.904);
+     --bg-color-scroll:rgba(255, 10, 10, 0.904);
+     
+    
+     /* tipos de fontes*/
+     --font-header:'Vollkorn', serif;
+     --font-secondary:'Vollkorn', serif;
+    
+     /* tamano de fontes*/
+     --font-size-h1: 45px;
+     --font-size-h2: 22px;
+     --font-size-h3: 30px;
+     --font-size-h4: 20px;
+     --font-size-p: 22px;
+
+     /*comprimento e altura*/
+     --width-principal: 600px;
+     --width-container: 460px;
+     --width-buttom: 300px;
+    
+}
+header{
+    width: var(--width-principal);
+    height: 120px;
+    border-radius: 20px 20px 0px 0px;
+    margin: auto;
+    text-align: center;
+    background-color:var(--bg-color-header) ;
+    box-shadow: 1px 1px 3px black;
+}
+header h1{
+    font-size: var(--font-size-h1);
+    padding-top: 16px;
+    letter-spacing: 3px;
+    color: #fff;
+    font-family: var(--font-header);
+}
+header h2{
+    font-size: var(--font-size-h2);
+    padding-bottom: 0px;
+    margin-top: -20px;
+    color: #fff;
+}
+main{
+    background-color: var(--bg-color-main);
+    width: var(--width-principal);
+    height: 1790px;
+    margin: auto;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 1px 1px 3px black;
+    
+}
+main h3{
+    font-size: var(--font-size-h3);
+    font-family:  var(--font-secondary);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 34px 0px 20px 52px;
+    line-height: 20px;
+    
+}
+.container{
+    width: var(--width-container);
+    height: 100px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: var(--bg-color-div);
+    border: 2px solid var(--color-border-div);
+    cursor: pointer;
+}
+.container img{
+    position: relative;
+    top: 7%;
+    right: 2%;
+    width: 130px;
+    height: 90px;
+    float: right;
+    border-radius: 5px;
+    object-fit: cover ;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.container h4{
+    margin-top: 0px;
+    font-size: var(--font-size-h4);
+    text-shadow: 1px 1px 1px #ccc;
+}
+.container p{
+    margin-top: -18px;
+    color: rgb(124, 124, 124);
+}
+.container .valor{
+    font-size: 20px;
+    margin-top: 14px;
+    color: #000;
+}
+.scroll-button{
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-color-button);
+    border-radius: 50%;
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+    cursor: pointer;
+}
+footer{
+    text-align: center;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button{
+    width: var(--width-buttom);
+    height: 50px;
+    border-radius: 30px;
+    padding: 4px;
+    box-shadow: 1px 1px 2px var(--bg-color-button);
+    margin-top: 50px;
+    margin: auto;
+    background-color: var(--bg-color-button);
+}
+.button p{
+    text-align: center;
+    font-size: var(--font-size-p);
+    font-weight: bold;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    color: #fff;
+   
+}
+.button:hover{
+    background-color: rgb(0, 173, 0);
+    box-shadow: 1px 1px 2px rgb(0, 173, 0);
+    cursor: pointer;
+    
+}
+.container-chosen1{
+    border: 2px solid var(--bg-color-scroll) ;
+}
+@media (max-width:638px){
+    :root{
+     --width-principal: calc(100% - 50px);
+     --width-container: calc(100% - 150px);
+     --width-buttom: calc(90% - 150px);
+    }
+}
